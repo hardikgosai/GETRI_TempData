@@ -1,0 +1,21 @@
+﻿<title>Employee List</title>
+<html>
+
+<head>
+    @ViewBag.Test
+</head>
+<body>
+    <table>
+        @foreach (var Employee in ViewBag.Employee)
+        {
+            <tr style="border:double;">
+                <td style="width:150px; border:double;">@Employee.EmpId</td>
+                <td style="width:150px; border:double;">@Employee.EmpName</td>
+                <td style="width:150px; border:double;">@Employee.EmpAge</td>
+                <td style="width:150px; border:double;">@Employee.EmpAddress</td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
